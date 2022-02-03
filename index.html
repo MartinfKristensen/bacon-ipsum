@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bacon Ipsum Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="getBacon()">
+    <h1>🥓Bacon Ipsum Generator🥓</h1>
+    <div class="wrap">
+      <div class="options">
+        <label for="sentences">Sentences: </label>
+        <input type="text" name="sentences" placeholder="25" id="sentences" />
+        <form action="">
+          <input
+            type="radio"
+            name="typeOfMeat"
+            checked="checked"
+            id="allMeat"
+          />
+          <label for="allMeat">Just Meat</label>
+          <input type="radio" name="typeOfMeat" id="meatAndFilling" />
+          <label for="meatAndFilling">Meat and Ipsum</label>
+        </form>
+        <form action="">
+          <input type="checkbox" name="spicy" id="spicy" />
+          <label for="spicy">Spicy Meat</label>
+        </form>
+        <div class="btn" onclick="getBacon()">Generate Bacon Impsum</div>
+      </div>
+      <div class="output">
+        <p id="lorem"></p>
+        <button id="copy" class="btn" onclick="copy()">Copy Ipsum</button>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
